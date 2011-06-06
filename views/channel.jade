@@ -1,0 +1,25 @@
+h1= channel
+
+#log
+  ul
+    //
+      li
+        .user
+          time( datetime="log.time.toISOString()" )= "log.time"
+          strong= "log.who"
+        p.message= "log.message"
+
+#users
+  ul
+    //
+      li= "user"
+
+form#send( action="/channel/" + channel, method="POST" )
+  input( name="who", type="hidden", value="inkel" )
+  input( name="channel", type="hidden", value=channel )
+  input( name="message", placeholder="Type your message here" )
+
+script( src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" )
+script( src="/js/jquery.timeago.js" )
+script( src="/socket.io/socket.io.js" )
+script( src="/js/channel.js" )

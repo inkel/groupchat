@@ -1,0 +1,18 @@
+{
+  "author": "Leandro López <inkel.ar@gmail.com> (inkel)",
+  "name": "groupchat",
+  "description": "Simple HTML5 + Node.js + Socket.io + Redis proof of concept application for enabling group chat.",
+  "version": "0.1.0",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": ">=v0.5.0e"
+  },
+  "dependencies": {
+      "express": "2.3.3",
+      "date-utils": "0.1.8",
+      "jade": "0.10.7"
+  },
+  "devDependencies": {}
+}
